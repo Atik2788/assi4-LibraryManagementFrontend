@@ -1,11 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 
-// Define a type for the slice state
-// interface CounterState {
-//     id: number;
-//     count: number;
-// }
 export interface Book {
   _id: string;
   title: string;
@@ -43,8 +38,7 @@ export const booksSlice = createSlice({
     name: "books",
     initialState,
     reducers: {
-       
-        
+               
     }
 })
 
