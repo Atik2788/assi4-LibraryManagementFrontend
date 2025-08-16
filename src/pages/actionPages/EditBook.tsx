@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
 import { useGetBookByIdQuery, useUpdateBookMutation } from "@/redux/api/bookApi";
-import type { Book } from "@/redux/features/counter/booksSlice";
 import type { BackendError } from "../AddBooks";
+import type { Book } from "@/redux/interfaces";
 
 export default function EditBook() {
   const { id } = useParams<{ id: string }>();

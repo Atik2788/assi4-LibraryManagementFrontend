@@ -1,4 +1,5 @@
-import { useGetBorrowedBooksQuery, type BorrowedBookData } from "@/redux/api/bookApi";
+import { useGetBorrowedBooksQuery } from "@/redux/api/bookApi";
+import type { BorrowedBookData } from "@/redux/interfaces";
 
 export const BorrowSummary = () => {
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDeleteBookMutation, useGetBooksQuery } from "@/redux/api/bookApi";
-import type { Book } from "@/redux/features/counter/booksSlice";
 import { toast } from "sonner";
+import type { Book } from "@/redux/interfaces";
 
 
 

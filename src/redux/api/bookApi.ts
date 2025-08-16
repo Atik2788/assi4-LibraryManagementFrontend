@@ -1,33 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import type { Book, BooksApiResponse} from "../features/counter/booksSlice";
+import type { Book, BooksApiResponse, BorrowedBooksApiResponse, BorrowedBooksApiResponseForserver, singleBook } from "../interfaces";
 
-export interface singleBook {
-    data: Book;
-    success: boolean;
-    message: string;
-}
 
-export interface BorrowedBooksApiResponseForserver {
-        book: string,
-        quantity: number,
-        dueDate: string,
-}
-
-export interface BorrowBook{
-        title: string,
-        isbn: string,
-}
-
-export interface BorrowedBookData {
-    totalQuantity: number;
-    book: BorrowBook;
-}
-
-export interface BorrowedBooksApiResponse {
-    data: BorrowedBookData[];
-    success: boolean;
-    message: string;
-}
 
 
 
