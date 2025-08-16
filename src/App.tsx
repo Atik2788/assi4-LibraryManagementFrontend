@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="bubble-background flex flex-col min-h-screen">
-        <Toaster position="top-right" />
+        <Toaster position="bottom-right" />
         <Navbar />
         <main className="flex-1">
           <Routes>
